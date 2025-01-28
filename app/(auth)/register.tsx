@@ -10,9 +10,7 @@ import * as Icons from "phosphor-react-native";
 import Button from "@/components/Button"
 import { useRouter } from 'expo-router';
 import { useAuth } from '@/contexts/authContext';
-
 const Register = () => {
-  
   const emailRef = useRef("");
   const passwordRef = useRef("");
   const nameRef = useRef("");
@@ -32,11 +30,12 @@ const Register = () => {
       nameRef.current
     );
     setIsLoading(false);
-    console.log ('register result: ', res);
+    console.log ("register result: ", res);
     if (!res.success) {
       Alert.alert("Sign up", res.msg);
       }
     };
+
   return (
     <ScreenWrapper>
     <View style={styles.container}>
