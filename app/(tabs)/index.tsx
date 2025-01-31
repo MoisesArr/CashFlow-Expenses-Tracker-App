@@ -9,7 +9,7 @@ import { useAuth } from "@/contexts/authContext";
 import ScreenWrapper from "@/components/ScreenWrapper";
 
 const Home = () => {
-  const {user} = useAuth();
+  const { user } = useAuth();
 
   // console.log("user: ", user)
   // const handleLogout = async ()=>{

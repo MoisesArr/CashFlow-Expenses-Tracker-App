@@ -22,6 +22,7 @@ export type ScreenWrapperProps = {
 export type ModalWrapperProps = {
   style?: ViewStyle;
   children: React.ReactNode;
+  bg?: string;
 };
 export type accountOptionType = {
   title: string;
